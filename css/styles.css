@@ -1,0 +1,156 @@
+p{display: block;}
+
+:root{
+    --primary: rgb(231, 149, 41);
+    --secondary: rgb(135, 33, 182);
+    --primary-dark: rgb(39, 39, 39);
+    --secondary-dark: rgb(97, 97, 97);
+    
+   
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg,var(--primary-dark),var(--secondary-dark));
+    min-height: 100vh;
+    color: rgb(221, 239, 255);
+}
+
+h1:first-child:hover{
+    text-shadow: 0 0   3px  yellow;
+    
+    
+    
+}
+
+
+img{border-radius: 50%;
+border: 10px var(--primary) solid;
+width: 320px;
+height: 320px;
+
+
+}
+
+img:hover{
+    
+    
+}
+
+
+
+h2{
+    display: block;
+    /* animation: tricolor 3s linear infinite; */
+    position: relative;
+    top: 0;
+}
+#presentacion{
+    display: flex;
+    place-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+@keyframes tricolor{
+    0%{
+        color: red;
+        font-size: 20px;
+    }
+    50%{color: purple;
+        font-size: 30px;}
+   
+    100%{color: blue;
+        font-size: 20px;}
+}
+
+.clonproyect{
+    background-color: rgb(20, 20, 20);
+    min-width: 200px;
+    min-height: 200px;
+    transition: .3s linear;
+    
+   
+    
+}
+
+.proyectscont{
+    display: grid ;
+    grid-template-columns: repeat(auto-fill, 200px) ;
+    justify-content: space-evenly;
+    max-width:960px;
+    gap:40px;
+    
+    
+    margin: 0 auto;
+
+}
+
+
+
+.tecno{
+    background: rgb(255, 184, 51);
+    width: 48px;
+    height: 48px;
+    transition: .1s linear;
+    text-align: center;
+    
+}
+.scaled{
+    border-radius: 10px;
+}
+
+.scaled:hover{
+    transform: scale(1.2);
+    
+}
+
+.tecnologys{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.clonproyect:nth-child(even){
+    background-color: orangered;
+}
+
+.clonproyect:nth-child(odd){
+    background-color: orange;
+}
+.clonproyect:hover{
+    box-shadow: 0 0 15px currentColor;
+}
+
+/* .clonproyect:active{
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+} */
+
+h1:first-child{
+    font-size:48px;
+    color: rgb(211, 253, 25);
+}
+ 
+body>section{
+    border-bottom: 0.5px solid rgb(70, 70, 70);
+    border-bottom-width: 50%;
+    padding-block-end: 2rem;
+}
+span{
+    display: block;
+}
+footer{
+    text-align-last: end;
+}
+
+.aboutme{
+    flex-direction: column;
+   
+    max-width: 500px;
+}
